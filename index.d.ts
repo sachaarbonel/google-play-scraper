@@ -142,7 +142,7 @@ export interface IAppItemFullDetail extends IAppItem {
   genreId: string
   categories: Array<{
     name: string
-    id: string|null
+    id: string | null
   }>
   icon: string
   headerImage: string
@@ -188,10 +188,10 @@ export interface IPermissionItem {
 }
 
 export interface IDataSafetyItem {
-  data : string
-  optional : string 
-  purpose : string
-  type : string
+  data: string
+  optional: string
+  purpose: string
+  type: string
 }
 
 // functions
@@ -310,7 +310,7 @@ export interface IFnPermissions {
 }
 
 // -- categories
-export interface IFnCategoriesOptions extends IOptions {}
+export interface IFnCategoriesOptions extends IOptions { }
 
 export interface IFnCategories {
   (options?: IFnCategoriesOptions): Promise<string[]>
@@ -358,5 +358,5 @@ export const reviews: IFnReviews
 export const similar: IFnSimilar
 export const permissions: IFnPermissions
 export const categories: IFnCategories
-export const datasafety : IFnDataSafety
+export const datasafety: IFnDataSafety
 export const memoized: IFnMemoized
