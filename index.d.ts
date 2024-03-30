@@ -330,6 +330,7 @@ export interface IMemoizedResult {
   category: category,
   collection: collection,
   sort: sort,
+  aggregate: aggregate,
   age: age,
   permission: permission,
   app: IFnApp
