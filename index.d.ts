@@ -69,6 +69,15 @@ export enum sort {
   HELPFULNESS = 1
 }
 
+export enum aggregate {
+  ALL = 0,
+  ONE = 1,
+  TWO = 2,
+  THREE = 3,
+  FOUR = 4,
+  FIVE = 5
+}
+
 export enum age {
   FIVE_UNDER = 'AGE_RANGE1',
   SIX_EIGHT = 'AGE_RANGE2',
@@ -261,6 +270,7 @@ export interface IFnReviewsOptions extends IOptions {
   lang?: string
   country?: string
   sort?: sort
+  aggregate?: aggregate
   num?: number,
   paginate?: boolean
   nextPaginationToken?: string
